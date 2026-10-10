@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            min-height: 50px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo img {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .submenu {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+            padding: 0;
+            min-width: 140px;
+            z-index: 1;
+        }
+
+        .menu ul li:hover > .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .jumbotron {
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .thumbnail {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            display: block;
+        }
+
+        .footer {
+            background-color: #ccc;
+            min-height: 50px;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://png.pngtree.com/recommend-works/png-clipart/20241009/ourmid/pngtree-cool-blue-dragon-logo-png-image_14012110.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="submenu">
+                            <li><a href="#">CV</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Welcome to My Homepage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor necessitatibus quae voluptate explicabo architecto fugiat asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente modi, ut harum aliquam accusamus unde.</p>
+        </div>
+
+        <div class="content">
+            <h2>My Products</h2>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/250x150" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Rp 150.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/250x150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/250x150" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Rp 350.000</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2018 My Page</p>
+        </div>
+    </div>
+</body>
+</html>
